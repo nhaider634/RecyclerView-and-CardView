@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fef9"
+    >
+
+    <EditText
+        android:id="@+id/capital"
+        android:layout_width="match_parent"
+       android:padding="5dp"
+        android:layout_height="100dp"
+        android:hint="Description"
+        android:background="#e3ffe1"
+        android:layout_margin="5dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="60dp"
+        android:layout_below="@+id/country"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Title"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="#c8f1de"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="18dp" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#d261b7b4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.82"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingLeft="50dp"
+            android:text="Add Items"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/capital"
+            android:layout_margin="8dp"
+            android:layout_weight="0.09"
+            android:background="@android:color/background_light"
+            android:text="OK"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="455dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Add Image"
+        android:textColor="#5097c8"
+        android:gravity="center_vertical"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
